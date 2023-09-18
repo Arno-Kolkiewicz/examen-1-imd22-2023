@@ -6,6 +6,7 @@
   --violet: #D7A1FD;
   --white: #ffffff;
   --black: #000000;
+  --green: #98FB00;
 }
 
 /* ====================================
@@ -139,6 +140,12 @@ main .section-newness hr {
   border: 7px solid var(--violet);
 }
 
+main .section-newness h3 {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 main .section-newness h3,
 h4,
 p {
@@ -152,4 +159,28 @@ main .section-newness .call-to-action-see-full {
   color: var(--violet);
   border: 0px;
   margin: 30px 77px;
+}
+
+main .section-quote {
+  padding: 20px;
+  background-color: var(--green);
+}
+
+main .section-quote p {
+  text-align: center;
+  font-family: Noto Serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+main .section-quote .quote {
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 28px;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
 }
