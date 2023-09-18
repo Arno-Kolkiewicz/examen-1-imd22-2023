@@ -3,11 +3,16 @@
 // ==================================== */
 
 :root {
+  --violet: #D7A1FD;
+  --white: #ffffff;
+  --black: #000000;
 }
 
 /* ====================================
 // reset rules
 // ==================================== */
+
+<link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
 
 * {
   box-sizing: border-box;
@@ -16,6 +21,8 @@
 }
 
 html {
+  width: 428px;
+  margin: auto;
   font-size: 16px;
 }
 
@@ -34,4 +41,51 @@ video {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: text-top;
+}
+
+header {
+  text-align: center;
+  background: var(--violet);
+  text-transform: uppercase;
+  font-family: 'Noto Serif';
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+header .section-titre {
+  padding: 20px;
+}
+
+header h1 {
+  font-family: 'Nunito Sans';
+  font-size: 50px;
+}
+
+header h1 span {
+  font-family: 'Noto Serif';
+  font-weight: 300;
+}
+
+header p {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+header nav {
+  background: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav a {
+  color: var(--white);
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
 }
