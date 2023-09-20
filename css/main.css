@@ -8,13 +8,12 @@
   --black: #000000;
   --green: #98FB00;
   --beige: #F4EDE8;
+  --grey: #313131;
 }
 
 /* ====================================
 // reset rules
 // ==================================== */
-
-<link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
 
 * {
   box-sizing: border-box;
@@ -51,7 +50,6 @@ header {
   text-transform: uppercase;
   font-family: 'Noto Serif';
   font-size: 20px;
-  font-weight: 300;
   line-height: 24px;
 }
 
@@ -70,14 +68,15 @@ header h1 span {
 }
 
 header p {
+  margin: 10px 0 0 0;
   color: var(--white);
   font-weight: 300;
   font-size: 20px;
-  font-weight: 300;
   line-height: 24px;
 }
 
 header nav {
+  padding: 10px;
   background: var(--black);
   display: flex;
   flex-direction: row;
@@ -92,10 +91,6 @@ header nav a {
   margin: 10px;
 }
 
-main {
-
-}
-
 main h2 {
   margin: 30px 0;
 }
@@ -106,7 +101,7 @@ main .section-program {
   flex-direction: column;
 }
 
-main .section-program-box {
+main .section-program-container {
 
   display: flex;
   flex-direction: row;
@@ -123,7 +118,7 @@ main .section-program h2 {
   text-align: center;
 }
 
-main .section-program-box .suggestion {
+main .section-program-container .suggestion {
   width: 49%;
   text-align: center;
   display: flex;
@@ -149,8 +144,8 @@ main .section-program h3 {
 }
 
 main .section-program h3,
-h4,
-p {
+main .section-program h4,
+main .section-program p {
   margin: 0;
   margin-bottom: 20px;
 }
@@ -213,7 +208,7 @@ main .section-new h2 {
   text-transform: uppercase
 }
 
-main .section-new .section-new-box {
+main .section-new .section-new-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -231,7 +226,6 @@ main .section-new img {
 }
 
 main .section-new p {
-  
   padding: 20px;
   font-family: Noto Serif;
   font-size: 15px;
@@ -247,6 +241,48 @@ main .section-new .uppercase-weight {
   text-transform: uppercase;
 }
 
-main .section-new .uppercase-weight {
+main .section-opportunities h2 {
+  margin: 0;
+  padding: 20px;
+  background: var(--violet);
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 50px;
+  letter-spacing: -2.5px;
+  text-transform: uppercase;
+}
+
+main .section-opportunities-container {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: stretch;
+  padding: 0 0 60px 0;
+}
+
+main .section-opportunities .box {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid var(--black);
+  background: var(--green);
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+main .section-opportunities .box-order {
+  order: 1;
+}
+
+main .section-opportunities .no-border-left {
+  border-left: 0;
+}
+
+
+main .section-opportunities .box-right {
+  border-top: 0;
+  order: 2;
+}
 
 }

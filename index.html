@@ -5,6 +5,10 @@
     <title>Examen 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&family=Nunito+Sans:wght@200..1000&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -13,15 +17,15 @@
         <p>11–22 OCTOBER 2023 LEEDS, UK</p>
       </div>
       <nav>
-        <a href="#">Programme</a>
-        <a href="#">News</a>
-        <a href="#">Opportunities</a>
+        <a href="#program">Programme</a>
+        <a href="#news">News</a>
+        <a href="#opportunities">Opportunities</a>
       </nav>
     </header>
     <main>
-      <div class="section-program">
+      <div class="section-program" id="program">
         <h2>What’s on</h2>
-        <div class="section-program-box">
+        <div class="section-program-container">
           <div class="suggestion">
             <img src="img/desire_marea.png" alt="Photo desir marea.">
             <hr>
@@ -42,14 +46,14 @@
           </div>
         </div>
         <button class="call-to-action-see-full">See full programme</button>
-        </div>
+      </div>
         <div class="section-quote">
           <p class="quote">“Transform has changed the way audiences experience Leeds”</p>
           <p>The Guardian</p>
         </div>
-        <div class="section-new">
+        <div class="section-new" id="news">
           <h2>What’s new</h2>
-          <div class="section-new-box">
+          <div class="section-new-container">
             <div class="suggestion">
               <img src="img/one_month_to_go.png" alt="Photo one_month_to_go.">
               <p>
@@ -64,6 +68,20 @@
                 Opening the festival alongside Ásrún Magnúsdóttir’s SECRETS, Transform’s Young Curators present IF WALLS COULD TALK.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-opportunities" id="opportunities">
+        <h2>opportunities</h2>
+        <div class="section-opportunities-container">
+          <div class="box box-order">
+            <p>Sottobosco: workshop call out</p>
+          </div>
+          <div class="box no-border-left">
+            <p>Volunteer call out</p>
+          </div>
+          <div class="box box-right">
+            <p>Join the distorded rap choir</p>
           </div>
         </div>
       </div>
